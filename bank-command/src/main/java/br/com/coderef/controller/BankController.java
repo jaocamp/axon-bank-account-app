@@ -29,7 +29,7 @@ public class BankController {
 
     @PostMapping
     public CompletableFuture<String> create(@RequestBody BankDTO dto) {
-        var command = new AddBankCommand(UUID.randomUUID().toString(), dto.getName(), dto.getBalance());
+        var command = new AddBankCommand(UUID.randomUUID().toString(), dto.getName());
         log.info("Executing command: {}", command);
         return commandGateway.send(command);
     }

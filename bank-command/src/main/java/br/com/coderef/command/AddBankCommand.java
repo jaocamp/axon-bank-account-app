@@ -15,5 +15,4 @@ public class AddBankCommand {
 	@TargetAggregateIdentifier
 	private String id;
 	private String name;
-	private BigDecimal balance;
 }

@@ -35,9 +35,8 @@ public class BankAggregate {
         log.info("Handling {} command: {}", cmd.getClass().getSimpleName(), cmd);
         Assert.hasLength(cmd.getId(), "Id should not be empty or null.");
         Assert.hasLength(cmd.getName(), "Name should not be empty or null.");
-        Assert.notNull(cmd.getBalance(), "Balance should not be empty or null.");
 
-        apply(new BankAddedEvent(cmd.getId(), cmd.getName(), cmd.getBalance()));
+        apply(new BankAddedEvent(cmd.getId(), cmd.getName(), BigDecimal.ZERO));
         log.info("Done handling {} command: {}", cmd.getClass().getSimpleName(), cmd);
     }
 
