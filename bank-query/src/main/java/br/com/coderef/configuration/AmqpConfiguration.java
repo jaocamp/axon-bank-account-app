@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Slf4j
 @Configuration
-public class AxonConfiguration {
+public class AmqpConfiguration {
 
     @Bean
     public SpringAMQPMessageSource complaintEventsMethod(Serializer serializer) {
