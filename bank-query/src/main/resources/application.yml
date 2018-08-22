@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/bank-db
+    url: jdbc:postgresql://localhost:5432/bank-account-db
     username: postgres
     password: postgres
   jpa:
@@ -15,7 +15,7 @@ spring:
 
 axon:
   amqp:
-    exchange: bank.events
+    exchange: bank-account.events
   eventhandling:
     processors:
       amqpEvents:
