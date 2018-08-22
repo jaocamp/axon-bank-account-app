@@ -3,15 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.com.coderef</groupId>
-    <artifactId>axon-bank-app</artifactId>
+    <artifactId>axon-bank-account-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>axon-bank-app</name>
-    <description>Bank App with Axon Framework</description>
+    <name>axon-bank-accounnt-app</name>
+    <description>Bank Account App with Axon Framework</description>
 
     <modules>
-        <module>bank-command</module>
-        <module>bank-query</module>
+        <module>bank-account-command</module>
+        <module>bank-account-query</module>
     </modules>
 </project>
