@@ -22,7 +22,7 @@ import java.util.concurrent.CompletableFuture;
 @Slf4j
 @RestController
 @AllArgsConstructor
-@RequestMapping("/banks")
+@RequestMapping("/bank-accounts")
 public class BankAccountController {
 
     private CommandGateway commandGateway;
